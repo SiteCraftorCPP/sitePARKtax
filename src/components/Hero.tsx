@@ -440,25 +440,25 @@ export default function Hero() {
 
       {/* 5. FOOTER (Legal & Contacts) - Unified with block style */}
       <footer className="mt-4 bg-zinc-50 border border-zinc-200/50 rounded-[3.5rem] p-10 lg:p-16 shadow-sm">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Column 1: Contacts */}
-          <div className="flex flex-col gap-6">
-            <h4 className="text-zinc-400 font-black uppercase tracking-[0.2em] text-[10px] text-center sm:text-left">Связь с нами</h4>
-            <div className="space-y-4 flex flex-col items-center sm:items-start">
-              <a href="tel:+79160560617" className="flex items-center gap-4 group w-fit">
+          <div className="flex flex-col gap-6 items-center md:items-start">
+            <h4 className="text-zinc-400 font-black uppercase tracking-[0.2em] text-[10px]">Связь с нами</h4>
+            <div className="flex flex-col gap-4 items-center md:items-start">
+              <a href="tel:+79160560617" className="flex items-center gap-4 group">
                 <div className="bg-white p-3 rounded-2xl shadow-sm group-hover:bg-green-500 group-hover:text-white transition-all border border-zinc-100 flex-shrink-0">
                   <Smartphone size={20} />
                 </div>
-                <div className="flex flex-col">
+                <div className="flex flex-col text-left">
                   <span className="text-[10px] font-bold text-zinc-400 uppercase tracking-tight">WhatsApp / Тел.</span>
                   <span className="text-base font-black text-zinc-900">+7 (916) 056-06-17</span>
                 </div>
               </a>
-              <a href="mailto:polniy-gaz@yandex.ru" className="flex items-center gap-4 group w-fit">
+              <a href="mailto:polniy-gaz@yandex.ru" className="flex items-center gap-4 group">
                 <div className="bg-white p-3 rounded-2xl shadow-sm group-hover:bg-blue-500 group-hover:text-white transition-all border border-zinc-100 flex-shrink-0">
                   <MessageCircle size={20} />
                 </div>
-                <div className="flex flex-col">
+                <div className="flex flex-col text-left">
                   <span className="text-[10px] font-bold text-zinc-400 uppercase tracking-tight">Почта</span>
                   <span className="text-base font-black text-zinc-900">polniy-gaz@yandex.ru</span>
                 </div>
@@ -467,45 +467,36 @@ export default function Hero() {
           </div>
 
           {/* Column 2: Legal Basic */}
-          <div className="flex flex-col gap-6">
-            <h4 className="text-zinc-400 font-black uppercase tracking-[0.2em] text-[10px] text-center sm:text-left">Организация</h4>
-            <div className="space-y-6 text-center sm:text-left">
+          <div className="flex flex-col gap-6 items-center md:items-start">
+            <h4 className="text-zinc-400 font-black uppercase tracking-[0.2em] text-[10px]">Организация</h4>
+            <div className="flex flex-col gap-4 items-center md:items-start text-center md:text-left">
               <div>
-                <p className="text-base font-black text-zinc-900 uppercase leading-none mb-1">ООО "ПОЛНЫЙ ГАЗ"</p>
-                <p className="text-[10px] font-bold text-zinc-400 uppercase tracking-widest">ИНН: 9727119598</p>
-              </div>
-              <div className="space-y-3">
-                <div className="flex flex-col">
-                  <span className="text-[9px] font-bold text-zinc-400 uppercase tracking-widest">КПП</span>
-                  <span className="text-xs font-black text-zinc-600">772701001</span>
-                </div>
-                <div className="flex flex-col">
-                  <span className="text-[9px] font-bold text-zinc-400 uppercase tracking-widest">ОГРН</span>
-                  <span className="text-xs font-black text-zinc-600">1257700523244</span>
+                <p className="text-base font-black text-zinc-900 uppercase leading-none mb-2">ООО "ПОЛНЫЙ ГАЗ"</p>
+                <div className="flex flex-col gap-3">
+                  <div className="flex flex-col">
+                    <span className="text-[9px] font-bold text-zinc-400 uppercase tracking-widest">ИНН / КПП</span>
+                    <span className="text-xs font-black text-zinc-600">9727119598 / 772701001</span>
+                  </div>
+                  <div className="flex flex-col">
+                    <span className="text-[9px] font-bold text-zinc-400 uppercase tracking-widest">ОГРН</span>
+                    <span className="text-xs font-black text-zinc-600">1257700523244</span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
           {/* Column 3: Address */}
-          <div className="flex flex-col gap-6">
-            <h4 className="text-zinc-400 font-black uppercase tracking-[0.2em] text-[10px] text-center sm:text-left">Юридический адрес</h4>
-            <div className="text-center sm:text-left">
-              <p className="text-xs font-black text-zinc-600 uppercase leading-relaxed tracking-tight max-w-[220px] mx-auto sm:mx-0">
+          <div className="flex flex-col gap-6 items-center md:items-start">
+            <h4 className="text-zinc-400 font-black uppercase tracking-[0.2em] text-[10px]">Юридический адрес</h4>
+            <div className="text-center md:text-left">
+              <p className="text-xs font-black text-zinc-600 uppercase leading-relaxed tracking-tight">
                 117041, РОССИЯ, <br />
                 г. Москва, <br />
                 ул. Адмирала Руднева, <br />
                 дом 4, пом. 30н/6
               </p>
             </div>
-          </div>
-
-          {/* Column 4: Empty or additional info to balance grid */}
-          <div className="hidden lg:flex flex-col items-end justify-start">
-             <div className="bg-zinc-100 p-8 rounded-[2.5rem] border border-zinc-200/50 flex flex-col items-center gap-3">
-                <div className="w-12 h-1 bg-yandex-yellow rounded-full mb-2" />
-                <p className="text-[10px] font-black text-zinc-400 uppercase tracking-[0.2em] text-center">Работаем по всей <br /> территории РФ</p>
-             </div>
           </div>
         </div>
 
