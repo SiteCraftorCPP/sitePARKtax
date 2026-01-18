@@ -276,12 +276,9 @@ export default function Hero() {
               <p className="text-zinc-400 font-bold leading-tight">
                 Дружный чат водителей. <br /> Обмен опытом, лайфхаки <br /> и живое общение.
               </p>
-            </div>
-            <div className="mt-10 relative z-10">
-              <button className="w-full bg-[#229ED9] hover:bg-[#1c8ec4] text-white font-black py-5 rounded-[2rem] flex items-center justify-center gap-3 transition-all shadow-xl shadow-[#229ED9]/20 uppercase text-xs tracking-widest">
-                Вступить в чат
-                <ArrowRight size={18} />
-              </button>
+              <p className="mt-4 text-[10px] font-black uppercase tracking-widest text-zinc-600">
+                Вступление после подключения к парку.
+              </p>
             </div>
             <div className="absolute right-[-20px] top-[-20px] opacity-10 blur-sm group-hover:opacity-20 transition-opacity">
               <Users size={200} className="text-white" />
