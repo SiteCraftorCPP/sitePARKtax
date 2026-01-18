@@ -511,10 +511,14 @@ export default function Hero() {
               Официальный партнер Яндекс Доставки
             </p>
           </div>
-          <div className="flex gap-2">
-            {[1, 2, 3].map(i => (
-              <div key={i} className={`h-1.5 w-6 rounded-full ${i === 1 ? 'bg-yandex-yellow' : 'bg-zinc-200'}`} />
-            ))}
+          <div className="flex items-center gap-4">
+            <a href="https://metrika.yandex.ru/stat/?id=106305535&amp;from=informer" target="_blank" rel="nofollow">
+              <img src="https://informer.yandex.ru/informer/106305535/3_0_FFFFFFFF_EFEFEFFF_0_pageviews"
+                   style={{ width:'88px', height:'31px', border:'0' }}
+                   alt="Яндекс.Метрика"
+                   title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)"
+                   className="ym-advanced-informer opacity-50 hover:opacity-100 transition-opacity" data-cid="106305535" data-lang="ru"/>
+            </a>
           </div>
         </div>
       </footer>
