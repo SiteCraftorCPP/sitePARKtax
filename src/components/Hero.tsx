@@ -10,7 +10,7 @@ export default function Hero() {
         <div className="mb-12">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 font-black uppercase tracking-tighter">
             <div className="lg:col-span-7 text-center">
-              <span className="text-3xl md:text-5xl text-zinc-900 leading-none inline-block">ПОДКЛЮЧЕНИЕ К ЯНДЕКС ДОСТАВКЕ</span>
+              <span className="text-3xl md:text-5xl text-zinc-900 leading-none inline-block">РАБОТА В ЯНДЕКС ДОСТАВКЕ</span>
             </div>
             <div className="lg:col-span-5 text-center">
               <span className="text-2xl md:text-3xl text-zinc-400 leading-none inline-block">ЧЕСТНО. УДОБНО. БЕЗ СЮРПРИЗОВ</span>
@@ -50,7 +50,7 @@ export default function Hero() {
 
             <div className="relative z-20 mt-12">
               <button className="bg-black hover:scale-105 active:scale-95 transition-all duration-300 text-white font-black py-7 px-14 rounded-[2rem] flex items-center gap-6 text-xl shadow-2xl group w-full md:w-auto justify-center uppercase tracking-tighter text-left">
-                Стать партнером
+                Начать зарабатывать
                 <ArrowRight size={28} className="group-hover:translate-x-2 transition-transform" />
               </button>
             </div>
@@ -183,7 +183,7 @@ export default function Hero() {
                   Моментально <br /> <span className="text-yandex-yellow">через Яндекс Про</span>
                 </p>
                 <div className="space-y-3">
-                  {["Без приложений", "Без задержек", "В любое время"].map((item) => (
+                  {["Без сторонних приложений", "Без задержек", "В любое время"].map((item) => (
                     <div key={item} className="flex items-center gap-3">
                       <div className="w-1.5 h-1.5 bg-yandex-yellow rounded-full" />
                       <span className="text-white/40 font-black uppercase text-[9px] tracking-[0.2em]">{item}</span>
@@ -291,10 +291,10 @@ export default function Hero() {
                 <Zap size={28} className="text-yandex-yellow fill-yandex-yellow" />
               </div>
               <h3 className="text-4xl md:text-5xl font-black text-black uppercase tracking-tighter leading-none mb-4">
-                БЫСТРАЯ <br /> РЕГИСТРАЦИЯ
+                Быстрая <br /> регистрация
               </h3>
               <p className="text-black font-bold text-lg leading-tight">
-                Можно начать работать <br /> в тот же день. Поможем на каждом этапе.
+                Выход на работу — в день обращения. Поддержка на каждом этапе.
               </p>
             </div>
             <div className="relative z-10 flex items-center gap-4 mt-8">
@@ -394,7 +394,7 @@ export default function Hero() {
                 КАК <br className="md:hidden" /> <span className="text-blue-600">ПОДКЛЮЧИТЬСЯ</span>
               </h3>
               <p className="text-lg md:text-2xl font-bold text-zinc-600 leading-tight max-w-xl">
-                Напиши в личные сообщения под постом —
+                Напиши нам -
                 и мы <span className="text-black underline decoration-blue-600 decoration-2 md:decoration-4 underline-offset-4 md:underline-offset-8">выведем тебя на заказы</span>.
               </p>
 
@@ -402,7 +402,7 @@ export default function Hero() {
                 {[
                   { text: "подскажем", icon: <MessageCircle size={18} /> },
                   { text: "зарегистрируем", icon: <UserCheck size={18} /> },
-                  { text: "выведем", icon: <Zap size={18} /> }
+                  { text: "Выведем на заказы", icon: <Zap size={18} /> }
                 ].map((item) => (
                   <div key={item.text} className="bg-white px-4 py-2.5 rounded-xl shadow-sm flex items-center gap-3.5 border border-zinc-100 md:hover:border-zinc-300 transition-all duration-300 w-full md:w-auto group/tag">
                     <div className="w-10 h-10 rounded-lg bg-zinc-50 flex items-center justify-center text-zinc-900 group-hover/tag:bg-yandex-yellow transition-colors duration-500">
@@ -440,7 +440,7 @@ export default function Hero() {
 
       {/* 5. FOOTER (Legal & Contacts) - Unified with block style */}
       <footer className="mt-4 bg-zinc-50 border border-zinc-200/50 rounded-[3.5rem] p-10 lg:p-16 shadow-sm">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 text-center md:text-left">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 text-center md:text-left">
           {/* Column 1: Contacts */}
           <div className="flex flex-col items-center md:items-start gap-6">
             <h4 className="text-zinc-400 font-black uppercase tracking-[0.2em] text-[10px]">Связь с нами</h4>
@@ -493,24 +493,6 @@ export default function Hero() {
               ул. Адмирала Руднева, <br />
               дом 4, пом. 30н/6
             </p>
-          </div>
-
-          {/* Column 4: Bank */}
-          <div className="flex flex-col items-center md:items-start gap-6">
-            <h4 className="text-zinc-400 font-black uppercase tracking-[0.2em] text-[10px]">Банковские реквизиты</h4>
-            <div className="space-y-4 text-center md:text-left">
-              <p className="text-sm font-black text-zinc-900 uppercase">ООО "Банк Точка"</p>
-              <div className="space-y-2">
-                <div className="flex flex-col">
-                  <span className="text-[9px] font-bold text-zinc-400 uppercase tracking-widest">Расчётный счёт</span>
-                  <span className="text-[11px] font-black text-zinc-600">40702810320000266947</span>
-                </div>
-                <div className="flex flex-col">
-                  <span className="text-[9px] font-bold text-zinc-400 uppercase tracking-widest">Корр. счёт</span>
-                  <span className="text-[11px] font-black text-zinc-600">30101810745374525104</span>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
 
