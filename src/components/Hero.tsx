@@ -49,10 +49,14 @@ export default function Hero() {
             </div>
 
             <div className="relative z-20 mt-12">
-              <button className="bg-black hover:scale-105 active:scale-95 transition-all duration-300 text-white font-black py-7 px-14 rounded-[2rem] flex items-center gap-6 text-xl shadow-2xl group w-full md:w-auto justify-center uppercase tracking-tighter text-left">
+              <a 
+                href="https://t.me/PolnyyGazSupport" 
+                target="_blank"
+                className="bg-black hover:scale-105 active:scale-95 transition-all duration-300 text-white font-black py-7 px-14 rounded-[2rem] flex items-center gap-6 text-xl shadow-2xl group w-full md:w-auto justify-center uppercase tracking-tighter text-left"
+              >
                 Начать зарабатывать
                 <ArrowRight size={28} className="group-hover:translate-x-2 transition-transform" />
-              </button>
+              </a>
             </div>
           </div>
 
@@ -303,7 +307,7 @@ export default function Hero() {
                   <div key={i} className="w-12 h-12 rounded-full border-4 border-yandex-yellow bg-zinc-200" />
                 ))}
               </div>
-              <p className="text-xs font-black uppercase tracking-wider text-black/60">Уже с нами <br /> +500 водителей</p>
+              <p className="text-xs font-black uppercase tracking-wider text-black/60">С нами уже <br /> более 500 водителей</p>
             </div>
             <ArrowRight size={150} className="absolute right-[-40px] bottom-[-20px] text-black/5 rotate-[-15deg] group-hover:rotate-0 transition-all duration-700" />
           </div>
