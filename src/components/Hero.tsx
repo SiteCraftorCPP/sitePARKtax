@@ -27,18 +27,18 @@ export default function Hero() {
                   Официальный партнер
                 </span>
               </div>
-              <h2 className="text-5xl md:text-7xl font-black text-black mb-10 leading-[0.9] tracking-tighter text-left">
+              <h2 className="text-5xl md:text-7xl font-black text-black mb-10 leading-[0.9] tracking-tighter text-center md:text-left">
                 Ищешь надёжный <br />
                 парк в Яндекс <br />
                 Доставке? <br />
                 <span className="bg-white px-5 py-2 mt-5 inline-block transform -rotate-2 shadow-lg text-4xl md:text-6xl uppercase leading-none">Ты по адресу</span>
               </h2>
 
-              <div className="space-y-12 mt-12 flex-grow flex flex-col justify-center">
-                <p className="text-2xl font-medium text-black/90 leading-tight max-w-xl">
+              <div className="space-y-12 mt-12 flex-grow flex flex-col justify-center items-center md:items-start">
+                <p className="text-2xl font-medium text-black/90 leading-tight max-w-xl text-center md:text-left">
                   Мы — парк, созданный <span className="font-bold underline decoration-4 underline-offset-8 text-black">водителями для водителей</span> со всей России.
                 </p>
-                <div className="flex flex-wrap gap-3">
+                <div className="flex flex-wrap justify-center md:justify-start gap-3">
                   {["Без скрытых комиссий", "Живая поддержка", "Моментальные выплаты"].map((tag) => (
                     <span key={tag} className="bg-black text-white px-5 py-2.5 rounded-xl font-black text-xs uppercase tracking-wider shadow-lg">
                       {tag}
@@ -197,20 +197,20 @@ export default function Hero() {
 
           {/* Bottom highlight: Cash orders & Transparency */}
           <div className="mt-5 grid grid-cols-1 lg:grid-cols-12 gap-5">
-            <div className="lg:col-span-8 bg-yandex-yellow rounded-[2.5rem] p-8 lg:px-12 flex flex-col md:flex-row items-center justify-between group cursor-default shadow-xl border border-black/5">
-              <div className="flex items-center gap-8 mb-6 md:mb-0">
-                <div className="bg-black p-6 rounded-[2rem] shadow-2xl group-hover:rotate-6 transition-transform flex-shrink-0 border border-white/10">
-                  <Banknote size={44} className="text-yandex-yellow" strokeWidth={2.5} />
+            <div className="lg:col-span-8 bg-yandex-yellow rounded-[2.5rem] p-6 md:p-8 lg:px-12 flex flex-col md:flex-row items-center justify-between group cursor-default shadow-xl border border-black/5 overflow-hidden">
+              <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8 mb-6 md:mb-0 text-center md:text-left">
+                <div className="bg-black p-5 md:p-6 rounded-[2rem] shadow-2xl group-hover:rotate-6 transition-transform flex-shrink-0 border border-white/10">
+                  <Banknote size={36} className="text-yandex-yellow md:size-[44px]" strokeWidth={2.5} />
                 </div>
                 <div>
-                  <h4 className="text-black text-4xl font-black uppercase leading-none tracking-tighter">
+                  <h4 className="text-black text-2xl md:text-4xl font-black uppercase leading-none tracking-tighter">
                     Настройка налички
                   </h4>
-                  <p className="text-black/40 font-black text-sm leading-none mt-2 uppercase tracking-[0.1em]">Специально для Грузового тарифа</p>
+                  <p className="text-black/40 font-black text-xs md:text-sm leading-none mt-2 uppercase tracking-[0.1em]">Специально для Грузового тарифа</p>
                 </div>
               </div>
-              <div className="text-center md:text-right">
-                <div className="inline-block bg-black text-white px-6 py-3 rounded-2xl font-black text-xs uppercase tracking-[0.2em] shadow-xl">
+              <div className="w-full md:w-auto text-center md:text-right">
+                <div className="inline-block bg-black text-white px-6 py-3 rounded-2xl font-black text-[10px] md:text-xs uppercase tracking-[0.2em] shadow-xl w-full md:w-auto">
                   Можно отключить
                 </div>
               </div>
@@ -440,16 +440,16 @@ export default function Hero() {
 
       {/* 5. FOOTER (Legal & Contacts) - Unified with block style */}
       <footer className="mt-4 bg-zinc-50 border border-zinc-200/50 rounded-[3.5rem] p-10 lg:p-16 shadow-sm">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 text-left">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 text-center md:text-left">
           {/* Column 1: Contacts */}
-          <div className="flex flex-col gap-6">
+          <div className="flex flex-col items-center md:items-start gap-6">
             <h4 className="text-zinc-400 font-black uppercase tracking-[0.2em] text-[10px]">Связь с нами</h4>
-            <div className="space-y-4">
+            <div className="space-y-4 flex flex-col items-center md:items-start">
               <a href="tel:+79160560617" className="flex items-center gap-4 group w-fit">
                 <div className="bg-white p-3 rounded-2xl shadow-sm group-hover:bg-green-500 group-hover:text-white transition-all border border-zinc-100">
                   <Smartphone size={20} />
                 </div>
-                <div className="flex flex-col">
+                <div className="flex flex-col text-left">
                   <span className="text-[10px] font-bold text-zinc-400 uppercase tracking-tight">WhatsApp / Тел.</span>
                   <span className="text-base font-black text-zinc-900">+7 (916) 056-06-17</span>
                 </div>
@@ -458,7 +458,7 @@ export default function Hero() {
                 <div className="bg-white p-3 rounded-2xl shadow-sm group-hover:bg-blue-500 group-hover:text-white transition-all border border-zinc-100">
                   <MessageCircle size={20} />
                 </div>
-                <div className="flex flex-col">
+                <div className="flex flex-col text-left">
                   <span className="text-[10px] font-bold text-zinc-400 uppercase tracking-tight">Почта</span>
                   <span className="text-base font-black text-zinc-900">polniy-gaz@yandex.ru</span>
                 </div>
@@ -467,9 +467,9 @@ export default function Hero() {
           </div>
 
           {/* Column 2: Legal Basic */}
-          <div className="flex flex-col gap-6">
+          <div className="flex flex-col items-center md:items-start gap-6">
             <h4 className="text-zinc-400 font-black uppercase tracking-[0.2em] text-[10px]">Организация</h4>
-            <div className="space-y-4">
+            <div className="space-y-4 text-center md:text-left">
               <p className="text-base font-black text-zinc-900 uppercase leading-none">ООО "ПОЛНЫЙ ГАЗ"</p>
               <div className="space-y-2">
                 <div className="flex flex-col">
@@ -485,9 +485,9 @@ export default function Hero() {
           </div>
 
           {/* Column 3: Address */}
-          <div className="flex flex-col gap-6">
+          <div className="flex flex-col items-center md:items-start gap-6">
             <h4 className="text-zinc-400 font-black uppercase tracking-[0.2em] text-[10px]">Юридический адрес</h4>
-            <p className="text-xs font-black text-zinc-600 uppercase leading-relaxed tracking-tight max-w-[220px]">
+            <p className="text-xs font-black text-zinc-600 uppercase leading-relaxed tracking-tight max-w-[220px] text-center md:text-left">
               117041, РОССИЯ, <br />
               г. Москва, <br />
               ул. Адмирала Руднева, <br />
@@ -496,9 +496,9 @@ export default function Hero() {
           </div>
 
           {/* Column 4: Bank */}
-          <div className="flex flex-col gap-6">
+          <div className="flex flex-col items-center md:items-start gap-6">
             <h4 className="text-zinc-400 font-black uppercase tracking-[0.2em] text-[10px]">Банковские реквизиты</h4>
-            <div className="space-y-4">
+            <div className="space-y-4 text-center md:text-left">
               <p className="text-sm font-black text-zinc-900 uppercase">ООО "Банк Точка"</p>
               <div className="space-y-2">
                 <div className="flex flex-col">

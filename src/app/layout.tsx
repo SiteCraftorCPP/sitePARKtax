@@ -5,8 +5,11 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin", "cyrillic"] });
 
 export const metadata: Metadata = {
-  title: "Парк Яндекс Доставки | Подключение партнеров",
+  title: "Полный Газ",
   description: "Подключение к Яндекс Доставке. Честно, удобно, без сюрпризов.",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({
