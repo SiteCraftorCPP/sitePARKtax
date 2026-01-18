@@ -440,9 +440,9 @@ export default function Hero() {
 
       {/* 5. FOOTER (Legal & Contacts) - Unified with block style */}
       <footer className="mt-4 bg-zinc-50 border border-zinc-200/50 rounded-[3.5rem] p-10 lg:p-16 shadow-sm">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div className="flex flex-col md:flex-row justify-between gap-12 items-start">
           {/* Column 1: Contacts */}
-          <div className="flex flex-col gap-6 items-center md:items-start">
+          <div className="flex flex-col gap-6 items-center md:items-start w-full md:w-auto">
             <h4 className="text-zinc-400 font-black uppercase tracking-[0.2em] text-[10px]">Связь с нами</h4>
             <div className="flex flex-col gap-4 items-center md:items-start">
               <a href="tel:+79160560617" className="flex items-center gap-4 group">
@@ -467,19 +467,19 @@ export default function Hero() {
           </div>
 
           {/* Column 2: Legal Basic */}
-          <div className="flex flex-col gap-6 items-center md:items-start">
+          <div className="flex flex-col gap-6 items-center md:items-start w-full md:w-auto md:ml-auto md:mr-auto">
             <h4 className="text-zinc-400 font-black uppercase tracking-[0.2em] text-[10px]">Организация</h4>
             <div className="flex flex-col gap-4 items-center md:items-start text-center md:text-left">
               <div>
-                <p className="text-base font-black text-zinc-900 uppercase leading-none mb-2">ООО "ПОЛНЫЙ ГАЗ"</p>
-                <div className="flex flex-col gap-3">
+                <p className="text-xl font-black text-zinc-900 uppercase leading-none mb-4 tracking-tighter">ООО "ПОЛНЫЙ ГАЗ"</p>
+                <div className="space-y-4">
                   <div className="flex flex-col">
                     <span className="text-[9px] font-bold text-zinc-400 uppercase tracking-widest">ИНН / КПП</span>
-                    <span className="text-xs font-black text-zinc-600">9727119598 / 772701001</span>
+                    <span className="text-[13px] font-black text-zinc-600">9727119598 / 772701001</span>
                   </div>
                   <div className="flex flex-col">
                     <span className="text-[9px] font-bold text-zinc-400 uppercase tracking-widest">ОГРН</span>
-                    <span className="text-xs font-black text-zinc-600">1257700523244</span>
+                    <span className="text-[13px] font-black text-zinc-600">1257700523244</span>
                   </div>
                 </div>
               </div>
@@ -487,14 +487,14 @@ export default function Hero() {
           </div>
 
           {/* Column 3: Address */}
-          <div className="flex flex-col gap-6 items-center md:items-start">
+          <div className="flex flex-col gap-6 items-center md:items-end w-full md:w-auto">
             <h4 className="text-zinc-400 font-black uppercase tracking-[0.2em] text-[10px]">Юридический адрес</h4>
-            <div className="text-center md:text-left">
-              <p className="text-xs font-black text-zinc-600 uppercase leading-relaxed tracking-tight">
+            <div className="text-center md:text-right">
+              <p className="text-sm font-black text-zinc-600 uppercase leading-relaxed tracking-tight">
                 117041, РОССИЯ, <br />
-                г. Москва, <br />
-                ул. Адмирала Руднева, <br />
-                дом 4, пом. 30н/6
+                Г. МОСКВА, <br />
+                УЛ. АДМИРАЛА РУДНЕВА, <br />
+                ДОМ 4, ПОМ. 30Н/6
               </p>
             </div>
           </div>
