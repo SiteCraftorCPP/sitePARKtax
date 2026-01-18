@@ -320,7 +320,7 @@ export default function Hero() {
                   Сами работаем в доставке. Знаем все тонкости, подводные камни и реальные лайфхаки изнутри.
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  {["тонкости", "камни", "лайфхаки"].map(t => (
+                  {["тонкости", "подводные камни", "лайфхаки"].map(t => (
                     <span key={t} className="bg-white/5 px-4 py-2 rounded-xl text-[10px] font-black uppercase tracking-widest text-zinc-500 border border-white/5">
                       {t}
                     </span>
